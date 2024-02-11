@@ -18,7 +18,7 @@ function renderTasks() {
     });
 }
 
-function addtask() {
+function addTask() {
     const newTask = taskInput.value.trim();
     if (newTask !== "") {
         tasks.push(newTask);
@@ -35,4 +35,11 @@ function deleteTask(index) {
     localStorage.setItem("tasks", JSON.stringify(tasks));
     renderTasks();
 }
+
+taskInput.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        addTask();
+    }
+});
+
 renderTasks();
