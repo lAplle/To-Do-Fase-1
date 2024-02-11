@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="all">
+            <h1>To-do List</h1>
+            <br />
+            <p>
+                Lista de tareas que agrega y elimina, almacenando los datos en
+                local storage.
+            </p>
+            <input
+                type="text"
+                placeholder="Escribe aquí tu tarea"
+                id="taskInput"
+            />
+            <button onclick="addtask()">Agregar</button>
+            <br />
+            <ul id="taskList"></ul>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
